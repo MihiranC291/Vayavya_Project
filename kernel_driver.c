@@ -32,9 +32,9 @@ static struct file_operations fops = {
 	.owner = THIS_MODULE,
 	.open = open,
 	.release = close,
-	.read = read
+	.read =my_read
 };
-static int __init my_driver_init(void) {
+static int __init my_driver_init(void) { 
 	if (alloc_chrdev_region(&dev_n, 0, 1, DEVICE_NAME) < 0) {
 		printk(KERN_ALERT "Test: failed to allocate device number\n");
 		return -1;
@@ -46,6 +46,8 @@ static int __init my_driver_init(void) {
 		return -1;
 	}
 	printk(KERN_INFO "Test: unregistered device\n");
+	return 0;
+}
 static void __exit my_driver_exit(void) {
 	cdev_del(&my_cdev);
 	unregister_chrdev_region(dev_n, 1);
@@ -54,7 +56,7 @@ static void __exit my_driver_exit(void) {
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Mihiran C");
 MODULE_DESCRIPTION("Simple Character Device Driver");
-MODULE_VERSION(1.0);
+MODULE_VERSION("1.0");
 
 module_init(my_driver_init);
 module_exit(my_driver_exit);

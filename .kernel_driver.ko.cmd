@@ -1,0 +1,1 @@
+savedcmd_/home/vayavya/Vayavya_Project/kernel_driver.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/vayavya/Vayavya_Project/kernel_driver.ko /home/vayavya/Vayavya_Project/kernel_driver.o /home/vayavya/Vayavya_Project/kernel_driver.mod.o
