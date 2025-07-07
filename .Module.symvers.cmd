@@ -1,1 +1,0 @@
-savedcmd_/home/vayavya/Vayavya_Project/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/vayavya/Vayavya_Project/Module.symvers -T /home/vayavya/Vayavya_Project/modules.order -i Module.symvers -e 
