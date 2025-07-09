@@ -9,4 +9,4 @@ Key areas of interest include the following-
 6. GPIO interfacing using Raspberry Pi 4B.
 7. The UART communication protocol.
 8. Cross-compilation between systems.
-9. Technical documentation with Git and Markdown.
+9. Technical documentation with Git, Markdown, and Docker.
