@@ -38,7 +38,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```bash
 sudo systemctl status docker
 ```
-You should see an output like this ![Image](installed.png). To return to the command line, press Ctrl+C.
+You should see an output like this- 
+![Image](installed.png) 
+
+To return to the command line, press Ctrl+C.
 
 ### Step 7: Set user to run docker without sudo (optional)
 ```bash
@@ -87,7 +90,10 @@ This may take some extra time depending on your system
 ```bash
 sudo docker build -t my-c-app .
 ```
-You should see this ![Image](simple_build.png). Wait until all processes are completed
+You should see this- 
+![Image](simple_build.png). 
+
+Wait until all processes are completed
 
 ### Step 5: Run the Docker container
 ```bash
@@ -127,7 +133,8 @@ sudo docker run --rm --privileged --device /dev/ttyS0 localhost:5000/my-c-app
 ```
 #### Note: We practice the use of `--privileged` and `--device` as they're required for testing kernel modules and device drivers in industrial projects.
 
-The output should be similar to the base case after the pull ![Image](regsitry_push.png).
+The output should be similar to the base case after the pull- 
+![Image](regsitry_push.png).
 
 
 ## Add Password Protection
@@ -172,7 +179,8 @@ Once your tasks are complete, you can logout of the registry using this command-
 sudo docker logout localhost:5000
 ```
 
-One can expect the following prompts on screen, assuming we have defined our username and password earlier as described above- ![Image](passwd.png)
+One can expect the following prompts on screen, assuming we have defined our username and password earlier as described above- 
+![Image](passwd.png)
 
 
 ## Enabling HTTPS For Improved Security During Remote Access
@@ -267,7 +275,8 @@ Now, you should be able to perform push and pull operations on your registry.
 sudo docker rm -f nginx-proxy my-registry
 ```
 
-Your setup and outputs should resemble this ![Image](https.png).
+Your setup and outputs should resemble this- 
+![Image](https.png).
 
 
 
